@@ -1,0 +1,17 @@
+<html><head></head><body><script>
+
+
+
+			addEventListener('load', async (e) =>{
+       const request =await window.fetch('/api/message')
+				const json = await request.json()
+				const text = await json['message']
+				console.log('the message is ' + text) 
+
+
+			})
+
+	</script>
+
+	</body>
+	</htmL>
